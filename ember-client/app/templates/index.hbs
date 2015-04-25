@@ -1,0 +1,14 @@
+<pre>
+clients:
+  {{#each client in model}}
+    client: {{client.name}},
+    dependents:
+      {{#each dependent in client.dependents}}
+        {{dependent.name}}
+        registrations:
+          {{#each registration in dependent.registrations}}
+            {{registration.name}}
+          {{/each}}
+      {{/each}}
+{{/each}}
+</pre>
