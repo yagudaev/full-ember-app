@@ -14,6 +14,7 @@ npm install
 ## Rails
 
 ```
+cd ember-server
 bundle install
 ```
 
